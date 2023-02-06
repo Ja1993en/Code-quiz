@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./main.css">
+    <title>Document</title>
+</head>
+<body>
+ <div class="container">
+    <!-- <button class=" high-score0">View HighScore </button> -->
+     <div class="task"><p>Today you will be taking a Speed Coding Quiz that will test your coding knowledge. You will have 60 seconds to complete the Quiz.</p></div>
+     <div id="timer" class="hide"></div>
+     <div id="question-container" class="hide">
+         <div id="question"></div>
+         <div id="answer-buttons" class="btn-grid">
+             <button class="btn option click1"></button>
+             <button class="btn option click2"></button>
+             <button class="btn option click3"></button>
+             <button class="btn option click4"></button>
+         </div>
+     </div>
+  
+     <div class="complete hide">
+        <div class=""><a>Your Score!</a></div>
+        <div class="your-score"><a></a></div>
+        <label class="enter-name" for="fname">Enter Name:</label><br>
+  <input type="text" id="fname" name="fname"><br>
+        <button id="submit-btn" class="btn">Submit Score</button>
+    </div>
+     
+
+
+     <div class="bottom">
+     <div id="results" class="hide"></div>
+     <div id="question-number"></div>
+    </div>
+
+
+
+<div class="highscore-container hide">
+    <h1 class="score-list">High Scores</h1>
+    <ul class="highScoreList"></ul>
+    <button  class="play-again btn"> Play Again</button>
+</div>
+    
+ <div class="controls ">
+     <button  id="start-btn" class="start-btn btn"> START</button>
+ </div>
+</div>
+
+
+    <!-- <script src="./question.js"></script> -->
+    <script src="./script.js"></script>
+    
+</body>
+</html>

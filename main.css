@@ -1,0 +1,175 @@
+::before, *::after {
+    box-sizing: border-box;
+    font-family:'Courier New', Courier, monospace;
+}
+
+:root {
+    --border-color: rgb(28, 192, 242);
+    --background-color: rgb(4, 4, 4);
+    --text-color: rgb(233, 229, 229);
+
+}
+
+.btn.correct{
+    background-color: var(--border-color);
+}
+
+body {
+    padding: 0;
+    margin: 0; 
+/* Display flex refers to all the content within the box */
+    display: flex;
+/* Lets the box know place in center of the entire page with */
+    width:100vw;
+/* Let the box know center of the entire height of the page  */
+    height:100vh;
+    /* These two item center it based on the allowed height and width */
+    justify-content: center;
+    align-items: center;
+    background-image: url(./assets/img/techbackground.webp);
+
+
+}
+
+
+.container {
+    height: 300px;
+    width:800px;
+    max-width: 80%;
+    background-color: rgb(33, 32, 32, 75%); 
+    border-radius: 5px;
+    border: 2px solid var(--border-color);
+    padding:10px;
+    /* x off set y offset blurr(10px fade out) spread(2px how far out)  */
+    box-shadow: 0 0 10px 2px;
+}
+
+#timer{
+    border: 2px solid var(--border-color);
+    background-color: antiquewhite;
+    width: 30px;
+    height: 25px;
+    text-align: center;
+    padding-top: 10px;
+}
+ .task p{
+    color: var(--text-color);
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+#question {
+    color: var(--text-color);
+  font-size: 1.7rem;
+  text-align: center;
+  margin-top: 20px;
+/* margin-top: 100px; */
+}  
+
+#question-number{
+    font-size: 25px;
+    /* margin-left: 80%; */
+    color: var(--border-color);
+}
+
+.bottom {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.btn-grid {
+    /* takes button element, displays it as a grid Stacking on one another */
+    display: grid;
+    /* define out columns repeat 2 makes 2 columns and auto width to fill space */
+    grid-template-columns: repeat(2, auto);
+    gap:20px;
+   margin: 20px 0;
+   
+  
+} 
+
+.btn{
+    border: 1px solid var(--border-color);
+    background-color: var(--background-color);
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: var(--text-color);
+    outline:none;
+}
+
+.correct::after {
+    color: green;
+    content: "Correct!";
+    font-size: 35px;
+   
+    /* border-bottom: 2px solid var(--border-color); */
+}
+
+.wrong::after{
+    color: red;
+    content: "Wrong!";
+    font-size: 35px;
+    /* border-bottom: 2px solid var(--border-color); */
+}
+
+.complete {
+    color: white;
+    text-align: center;
+    padding-top: 30px;
+    font-size: 30px;
+
+}
+.your-score{
+    padding-top: 20px;
+    font-size: 40px;
+}
+
+.enter-name{
+    font-size: 20px;
+}
+
+.start-btn{
+    margin: 15px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 10px 20px; 
+    border-radius: 5px;
+}
+
+#submit-btn{
+    margin-top: 20px;
+}
+.score-list{
+  border-bottom: 2px solid var(--border-color);
+}
+.controls{
+    display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
+.highscore-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    color:white;
+   
+} 
+.highScore{
+    color: white;
+    list-style-type: none;
+    font-size: 25px;
+    margin-right:40px
+}
+.center{
+   text-align: center;
+}
+.hide {
+    display: none;
+} 
+
